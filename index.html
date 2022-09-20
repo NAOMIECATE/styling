@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- APPLYING INTERNAL CSS -->
+    <style>
+        body{
+background-color: aquamarine;
+        }
+        h1{
+            font-size: 40px;
+            background-color: black;
+        }
+        p{
+            font-size: 100px;
+            color: palevioletred;
+        }
+        ul{
+            color:brown;
+            background-color: burlywood;
+            width:100px;
+            height: 150px;
+        }
+        li{
+            color: blue;
+        }
+</style>
+<!-- applying external css by linking its file to html -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="background-color:grey">INTRODUCTION TO CSS</h1>
+    <!-- applying inline css -->
+    <P style="font-size: 50px; color:grey" >Different types of css</P>
+        <ul>
+            <h3>Examples of CSS;</h3> 
+            <li style="font-size:20px">Internal CSS</li>
+        <li>Inline CSS</li>
+    <li>External CSS</li>
+</ul>
+<!-- using div element -->
+<!-- using id selectors -->
+<div id="division">
+    <h2>This is our very first div element</h2>
+</div>
+<!-- using class selectors by showing how to use several class selectors on same element -->
+<div class="one black sweet">
+    <h3>hello world</h3>
+</div>
+
+</body>
+</html>
