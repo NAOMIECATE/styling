@@ -14,9 +14,17 @@ background-color: aquamarine;
             font-size: 40px;
             background-color: black;
         }
-        p{
-            font-size: 100px;
+        .p-two{
+            font-size: 30px;
             color: palevioletred;
+            line-height: 0.2;
+            word-spacing: 10px;
+            /* applying font-family style */
+            font-family: 'Henny Penny', cursive;
+
+        }
+        .p-one{
+            font-family:  'Nabla', cursive;;
         }
         ul{
             color:brown;
@@ -30,17 +38,32 @@ background-color: aquamarine;
 </style>
 <!-- applying external css by linking its file to html -->
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+<!-- linking font-family nabla to <p> class="p-one" -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Nabla&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#">home</a>
+    <a href="#">about</a>
+    <a href="#">services</a>
+    <a href="#">contact us</a>
     <h1 style="background-color:grey">INTRODUCTION TO CSS</h1>
     <!-- applying inline css -->
-    <P style="font-size: 50px; color:grey" >Different types of css</P>
+    <P  class="p-one"style="font-size: 50px; color:grey" >Different types of css</P>
         <ul>
             <h3>Examples of CSS;</h3> 
             <li style="font-size:20px">Internal CSS</li>
         <li>Inline CSS</li>
     <li>External CSS</li>
 </ul>
+<p class="p-two">Internal css is applied within the head element</p>
+<p class="p-two">Inline css is applied inside the opening tag of an element</p>
+<p class="p-two">External css is created in another file then linked to a html file to show the changes</p>
+<p class="p-two">In css,inline css is the most effective followed by external css then lastly internal</p>
 <!-- using div element -->
 <!-- using id selectors -->
 <div id="division">
@@ -50,6 +73,38 @@ background-color: aquamarine;
 <div class="one black sweet">
     <h3>hello world</h3>
 </div>
-
+<img class="image-1" src="https://images.pexels.com/photos/87452/flowers-background-butterflies-beautiful-87452.jpeg?cs=srgb&dl=pexels-pixabay-87452.jpg&fm=jpg"alt="nice flowers">
+<img class="image-2" src="https://images.pexels.com/photos/931162/pexels-photo-931162.jpeg?cs=srgb&dl=pexels-secret-garden-931162.jpg&fm=jpg"alt="beautiful flowers">
+<hr size="3" noshade="" colour="pink">
+<!-- applying  tables -->
+<table>
+    <thead>
+        <tr>
+            <th>cohort 1</th>
+            <th>cohort 2</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr>
+            <td>femidevs💖</td>
+            <td>graphics design</td>
+        </tr>
+        <tr>
+            <td>programme</td>
+            <td>lakehub</td>
+        </tr>
+        <tr>
+            <td>brilliant</td>
+            <td>excellent</td>
+        </tr>
+        <tr>
+            <td>coding</td>
+            <td>computers</td>
+        </tr>
+    </tbody>
+</table>
+<div>
+    <h3>Centering an element </h3>
+</div>
 </body>
 </html>
